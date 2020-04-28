@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class collectionsMin {
+public static void main(String[] args) {
+int[] arr= {1,2,3,4,5};
+int x=3;
+int begind=0;
+List<Integer>min_list=new ArrayList<Integer>();
+while(begind<x)
+{
+List<Integer>l=new ArrayList<Integer>();
+for(int i=begind;i<begind+x-1;i++)
+	l.add(arr[i]);
+min_list.add(Collections.min(l));
+begind++;
+}
+System.out.print(Collections.max(min_list));
+}
+}
